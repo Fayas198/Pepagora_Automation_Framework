@@ -1,0 +1,65 @@
+Test Case Category,Test Case ID,Scenario ID,Test Case Description (test Scenario),Steps,Expected Result,Priority
+Positive,TC001,TS001,Submit buying request as existing user,"1. Launch the URL
+2. Fill all required buying request fields with valid data
+3. Click Submit
+4. System prompts user to Sign In
+5. User is redirected to Sign In tab
+6. Enter registered Email and Password
+7. Complete reCAPTCHA if prompted
+8. Submit the buying request form",User is redirected to the Sign In page and after successful login the request is submitted and confirmation message is shown,High
+Positive,TC002,TS002,Submit buying request as new user,"1. Fill all required buying request fields with valid data
+2. Click Submit
+3. System prompts user to Sign Up
+4. User enters First Name and Last Name
+5. Enter Email address
+6. Create Password
+7. Select Country
+8. Select State
+9. Enter City
+10. Click Sign Up
+11. Complete reCAPTCHA
+12. Submit the buying request form",User is redirected to Sign Up page, after successful signup the buying request is submitted and confirmation message is shown,High
+Negative,TC003,TS003,Submit with all fields empty,"1. Launch the URL
+2. Click Submit without entering any data",Inline error message should be displayed as "This field is required" along with textbox should be highlighted as red,High
+Negative,TC004,TS004,Submit with missing Product Name,"1. Fill all fields except Product Name
+2. Click Submit",Validation error for Product Name is shown,High
+Negative,TC005,TS005,Upload unsupported file type,"1. Click file upload
+2. Select a .exe file
+3. Attempt to upload",Error message for unsupported file type,Medium
+Negative,TC006,TS006,Upload image larger than 3MB,"1. Click file upload
+2. Select an image >3MB
+3. Attempt to upload",Error message for file size limit,Medium
+Negative,TC007,TS007,Enter invalid email format,"1. Enter invalid email (e.g., user@)
+2. Click Submit",Email validation error is shown,High
+Negative,TC008,TS008,Enter non-numeric quantity,"1. Enter text in quantity field
+2. Click Submit",Quantity validation error is shown,High
+Edge Case,TC009,TS009,Upload maximum allowed images,"1. Upload 5 valid images",All images are uploaded and previewed,Medium
+Edge Case,TC010,TS010,Upload more than 5 images,"1. Upload 6 images",Error message for exceeding image limit,Medium
+Edge Case,TC011,TS011,Switch to Service and submit valid request,"1. Select 'Service' radio
+2. Fill required fields
+3. Submit",Form is submitted successfully for service,Medium
+Boundary,TC012,TS012,Enter maximum characters in Product Name,"1. Enter allowed characters in Product Name
+2. Click Submit",Form accept input if within limit; error if exceeded,Medium
+Boundary,TC013,TS013,Enter past date in Expiry Date,"1. Enter a date before today
+2. Click Submit",Expiry date validation error is shown,High
+Boundary,TC014,TS014,Enter valid future date in Expiry Date,"1. Enter a future date
+2. Click Submit",Form accepts the expiry date,High
+Form Validation,TC015,TS015,Submit form without completing reCAPTCHA,"1. Fill all required fields
+2. Do not complete reCAPTCHA
+3. Click Submit",Submission is blocked; error shown for reCAPTCHA,High
+Form Validation,TC016,TS016,Submit form with only required fields,"1. Fill only required fields
+2. Leave optional fields blank
+3. Click Submit",Form is submitted successfully,Medium
+UI Interaction,TC017,TS017,Verify navigation links and UI elements,"1. Check presence and functionality of navigation links, buttons, and labels",All UI elements are present and functional,Low
+UI Interaction,TC018,TS018,Verify Product/Service radio toggle,"1. Toggle between Product and Service radio buttons",Form updates accordingly and allows input for both,Medium
+UI Interaction,TC019,TS019,Verify file upload UI,"1. Click file upload
+2. Select valid image",File upload UI displays preview and file name,Medium
+UI Interaction,TC020,TS020,Verify error message display and clearing,"1. Trigger validation error
+2. Correct the input",Error message disappears after correction,Medium
+UI Interaction,TC021,TS021,Existing user tries to sign up manually,"1. Submit buying request
+2. Complete the buying request form
+3. User manually switches to Sign Up tab
+4. Enter First Name, Last Name, Email (already registered)
+5. Enter password and other required details
+6. Enter captcha
+7. Click Sign Up",System should show warning message: User already exists / Email already registered and prompt user to Sign In,High

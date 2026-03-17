@@ -1,0 +1,22 @@
+{
+  "existingUser": {
+    "email": "existing@example.com",
+    "password": "Password123"
+  },
+  "newUser": {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "jane.doe@example.com",
+    "password": "Password123"
+  },
+  "buyingRequest": {
+    "productName": "Laptop",
+    "category": "Laptops",
+    "requirement": "Need 100 units of quality laptops for our organization",
+    "quantity": "100",
+    "unit": "Pieces",
+    "expiryDate": "2026-12-31",
+    "contactPerson": "John Doe",
+    "email": "john@example.com"
+  }
+}

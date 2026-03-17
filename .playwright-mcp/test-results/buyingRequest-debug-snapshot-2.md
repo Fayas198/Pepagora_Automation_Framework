@@ -1,0 +1,368 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e5]:
+        - link "Pepagora Home" [ref=e7] [cursor=pointer]:
+          - /url: https://staging.pepagora.com
+          - img [ref=e8]
+        - generic [ref=e9]:
+          - text: "| |"
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - link "Post Buying Request" [ref=e13] [cursor=pointer]:
+                - /url: https://staging.pepagora.com/post/buyingRequest
+              - link "Cart 35" [ref=e14] [cursor=pointer]:
+                - /url: javascript:;
+                - generic [ref=e16]: Cart
+                - generic [ref=e17]: "35"
+            - generic [ref=e20]:
+              - generic:
+                - textbox "Enter keyword to search" [ref=e21]
+                - button "search" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]:
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - heading "Post Buying Request" [level=3] [ref=e28]
+            - heading "Place a request for price quote for any product/service you desire.Choose your category & quantity and submit the RFQ form." [level=4] [ref=e29]
+          - generic [ref=e31]:
+            - paragraph [ref=e33]: Request quote for
+            - generic [ref=e34]:
+              - generic [ref=e35] [cursor=pointer]:
+                - radio "Product" [checked] [ref=e36]
+                - text: Product
+              - generic [ref=e37] [cursor=pointer]:
+                - radio "Service" [ref=e38]
+                - text: Service
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - paragraph [ref=e43]: Product Name*
+              - textbox [ref=e46]: Test Product
+            - generic [ref=e47]:
+              - paragraph [ref=e49]: Category*
+              - generic [ref=e50]:
+                - generic [ref=e52]:
+                  - link "Select Category" [ref=e53] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                  - textbox
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - list:
+                      - listitem [ref=e57]:
+                        - link "Select Category" [ref=e58] [cursor=pointer]:
+                          - /url: "#selectWrap"
+                  - generic [ref=e59]:
+                    - generic [ref=e60]:
+                      - generic [ref=e61]:
+                        - textbox "Search Categories" [ref=e63]
+                        - button "Search" [ref=e65] [cursor=pointer]
+                        - generic [ref=e66]: or
+                        - button "Browse Categories" [ref=e68] [cursor=pointer]
+                        - generic [ref=e69]:
+                          - text: Can't find your category?
+                          - link "Click here!" [ref=e70] [cursor=pointer]:
+                            - /url: "#pCrOl"
+                      - list [ref=e74]:
+                        - listitem [ref=e75]: Please select a category
+                        - listitem [ref=e76]:
+                          - generic [ref=e77] [cursor=pointer]:
+                            - radio "Agriculture >> Charcoal" [ref=e78]
+                            - text: Agriculture >> Charcoal
+                        - listitem [ref=e79]:
+                          - generic [ref=e80] [cursor=pointer]:
+                            - radio "Agriculture >> Flower Pots & Planters" [ref=e81]
+                            - text: Agriculture >> Flower Pots & Planters
+                        - listitem [ref=e82]:
+                          - generic [ref=e83] [cursor=pointer]:
+                            - radio "Agriculture >> Other Agriculture Products" [ref=e84]
+                            - text: Agriculture >> Other Agriculture Products
+                        - listitem [ref=e85]:
+                          - generic [ref=e86] [cursor=pointer]:
+                            - radio "Automobiles & Motorcycles >> Motorcycles" [ref=e87]
+                            - text: Automobiles & Motorcycles >> Motorcycles
+                    - generic [ref=e88]:
+                      - button "OK" [disabled] [ref=e90]
+                      - button "Cancel" [ref=e92] [cursor=pointer]
+            - generic [ref=e93]:
+              - paragraph [ref=e95]: Requirement in Detail*
+              - application "Rich Text Area" [ref=e98]:
+                - toolbar [ref=e99]:
+                  - group "Toolbar" [ref=e100]:
+                    - application [ref=e101]:
+                      - table [ref=e102]:
+                        - rowgroup [ref=e103]:
+                          - row "Undo (Ctrl+Z) Redo (Ctrl+Y) Font Family Font Size Bold (Ctrl+B) Italic (Ctrl+I) Underline (Ctrl+U) Select Text Color Select Background Color Remove Formatting Align Left Align Center Align Right Align Full Insert/Remove Bulleted List Insert/Remove Numbered List" [ref=e104]:
+                            - cell
+                            - cell "Undo (Ctrl+Z)" [ref=e105]:
+                              - button "Undo (Ctrl+Z)" [ref=e106]
+                            - cell "Redo (Ctrl+Y)" [ref=e108]:
+                              - button "Redo (Ctrl+Y)" [disabled] [ref=e109]
+                            - cell
+                            - cell "Font Family" [ref=e111]:
+                              - listbox "Font Family" [ref=e112]:
+                                - table [ref=e113]:
+                                  - rowgroup [ref=e114]:
+                                    - row "Font Family" [ref=e115]:
+                                      - cell "Font Family" [ref=e116]:
+                                        - link "Font Family" [ref=e117]:
+                                          - /url: javascript:;
+                                      - cell [ref=e118]:
+                                        - link [ref=e119]:
+                                          - /url: javascript:;
+                            - cell "Font Size" [ref=e120]:
+                              - listbox "Font Size" [ref=e121]:
+                                - table [ref=e122]:
+                                  - rowgroup [ref=e123]:
+                                    - row "Font Size" [ref=e124]:
+                                      - cell "Font Size" [ref=e125]:
+                                        - link "Font Size" [ref=e126]:
+                                          - /url: javascript:;
+                                      - cell [ref=e127]:
+                                        - link [ref=e128]:
+                                          - /url: javascript:;
+                            - cell
+                            - cell "Bold (Ctrl+B)" [ref=e129]:
+                              - button "Bold (Ctrl+B)" [ref=e130]
+                            - cell "Italic (Ctrl+I)" [ref=e132]:
+                              - button "Italic (Ctrl+I)" [ref=e133]
+                            - cell "Underline (Ctrl+U)" [ref=e135]:
+                              - button "Underline (Ctrl+U)" [ref=e136]
+                            - cell "Select Text Color" [ref=e138]:
+                              - button "Select Text Color" [ref=e139]:
+                                - button "Select Text Color" [ref=e140]
+                                - button "Select Text Color" [ref=e143]
+                            - cell "Select Background Color" [ref=e144]:
+                              - button "Select Background Color" [ref=e145]:
+                                - button "Select Background Color" [ref=e146]
+                                - button "Select Background Color" [ref=e149]
+                            - cell "Remove Formatting" [ref=e150]:
+                              - button "Remove Formatting" [ref=e151]
+                            - cell [ref=e153]:
+                              - separator [ref=e154]
+                            - cell "Align Left" [ref=e155]:
+                              - button "Align Left" [ref=e156]
+                            - cell "Align Center" [ref=e158]:
+                              - button "Align Center" [ref=e159]
+                            - cell "Align Right" [ref=e161]:
+                              - button "Align Right" [ref=e162]
+                            - cell "Align Full" [ref=e164]:
+                              - button "Align Full" [ref=e165]
+                            - cell "Insert/Remove Bulleted List" [ref=e167]:
+                              - button "Insert/Remove Bulleted List" [ref=e168]
+                            - cell "Insert/Remove Numbered List" [ref=e170]:
+                              - button "Insert/Remove Numbered List" [ref=e171]
+                            - cell
+                  - link "Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X":
+                    - /url: "#"
+                - iframe [ref=e173]:
+                  - paragraph [ref=f2e2]: Need 100 units
+                - group [ref=e174]: "You have entered: 14 /4000 characters"
+            - generic [ref=e175]:
+              - paragraph [ref=e177]: Related Images
+              - generic [ref=e179]:
+                - generic [ref=e181]:
+                  - button "Choose File" [ref=e182]
+                  - button "Browse" [ref=e183] [cursor=pointer]
+                - generic [ref=e184]: "Supported format: Jpeg, Jpg, Gif, or Png Size: Max. 3MB, Upload Max. 5 images"
+            - generic [ref=e185]:
+              - paragraph [ref=e187]: Estimated Order Quantity*
+              - generic [ref=e188]:
+                - textbox "Quantity" [ref=e190]: "100"
+                - combobox [ref=e192]:
+                  - option "Please Select"
+                  - option "Pieces" [selected]
+                  - option "Tons"
+                  - option "Sets"
+                  - option "Boxes"
+                  - option "Meter"
+                  - option "Pairs"
+                  - option "Square Meters"
+                  - option "Foot"
+                  - option "40' HQ Container"
+                  - option "Reams"
+                  - option "Acre"
+                  - option "Ampere"
+                  - option "Bags"
+                  - option "Barrel"
+                  - option "Bushel"
+                  - option "Carton"
+                  - option "Case"
+                  - option "Centimeter"
+                  - option "Chain"
+                  - option "Cubic Centimeter"
+                  - option "Cubic Foot"
+                  - option "Cubic Inch"
+                  - option "Cubic Meter"
+                  - option "Cubic Yard"
+                  - option "Dozen"
+                  - option "Dram"
+                  - option "Fluid Ounce"
+                  - option "40' Container"
+                  - option "Furlong"
+                  - option "Gallon"
+                  - option "Gill"
+                  - option "Grain"
+                  - option "Gram"
+                  - option "Gross"
+                  - option "Hectare"
+                  - option "Hertz"
+                  - option "Inch"
+                  - option "Kiloampere"
+                  - option "Kilogram"
+                  - option "Kilohertz"
+                  - option "Kilometer"
+                  - option "Kiloohm"
+                  - option "Kilovolt"
+                  - option "Kilowatt"
+                  - option "Liter"
+                  - option "Long Ton"
+                  - option "Megahertz"
+                  - option "Metric Ton"
+                  - option "Mile"
+                  - option "Milliampere"
+                  - option "Milligram"
+                  - option "Millihertz"
+                  - option "Milliliter"
+                  - option "Millimeter"
+                  - option "Milliohm"
+                  - option "Millivolt"
+                  - option "Milliwatt"
+                  - option "Nautical Mile"
+                  - option "Ohm"
+                  - option "Ounce"
+                  - option "Pack"
+                  - text: dd
+                  - option "Pallet"
+                  - option "Parcel"
+                  - option "Perch"
+                  - option "Pint"
+                  - option "Plant"
+                  - option "Pole"
+                  - option "Pound"
+                  - option "Quart"
+                  - option "Quarter"
+                  - option "Rod"
+                  - option "Rolls"
+                  - option "Sheet"
+                  - option "Short Ton"
+                  - option "Square Centimeter"
+                  - option "Square Feet"
+                  - option "Square Inch"
+                  - option "Square Mile"
+                  - option "Square Yard"
+                  - option "Stone"
+                  - option "Strand"
+                  - option "Tonne"
+                  - option "Tray"
+                  - option "20' Container"
+                  - option "Unit"
+                  - option "Volt"
+                  - option "Watt"
+                  - option "Wp"
+                  - option "Yard"
+            - generic [ref=e193]:
+              - paragraph [ref=e195]: Expiry Date*
+              - generic [ref=e197]:
+                - textbox "Date" [ref=e198]: 2026-12-31
+                - generic [ref=e199]: Your Quote is Valid for next 290 days
+            - heading "Trade Information(Optional)" [level=6] [ref=e203]:
+              - link "Trade Information(Optional)" [ref=e204] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e205]: Trade Information(Optional)
+            - generic [ref=e208]:
+              - heading "Contact Information(Mandatory)" [level=6]:
+                - generic [ref=e209]: Contact Information(Mandatory)
+            - generic [ref=e210]:
+              - paragraph [ref=e212]: Contact Person*
+              - textbox [ref=e215]: John Doe
+            - generic [ref=e216]:
+              - paragraph [ref=e218]: Email*
+              - textbox [ref=e221]: john@example.com
+            - iframe [ref=e225]:
+              - generic [ref=f1e2]:
+                - generic [ref=f1e3]:
+                  - checkbox "I'm not a robot" [ref=f1e7]
+                  - generic [ref=f1e11]: I'm not a robot
+                  - generic [ref=f1e13]:
+                    - text: reCAPTCHA is changing its terms of service.
+                    - link "Take action." [ref=f1e14] [cursor=pointer]:
+                      - /url: https://google.com/recaptcha/admin/migrate
+                - generic [ref=f1e15]:
+                  - generic [ref=f1e18]: reCAPTCHA
+                  - generic [ref=f1e19]:
+                    - link "Privacy" [ref=f1e20] [cursor=pointer]:
+                      - /url: https://www.google.com/intl/en/policies/privacy/
+                    - text: "-"
+                    - link "Terms" [ref=f1e21] [cursor=pointer]:
+                      - /url: https://www.google.com/intl/en/policies/terms/
+            - generic [ref=e226]: This field is required.
+            - link "Submit" [active] [ref=e229] [cursor=pointer]:
+              - /url: javascript:;
+        - generic [ref=e230]:
+          - generic [ref=e231]:
+            - heading "Our Client Says" [level=5] [ref=e232]
+            - paragraph [ref=e233]:
+              - text: We are pleasure in being as a customer of pepagora.com.The services are fine and enquiries are good...
+              - link "More" [ref=e234] [cursor=pointer]:
+                - /url: ../about/testimonials
+            - paragraph [ref=e235]:
+              - text: Kavitha kathirvel
+              - text: CEO, V.K Engineering
+            - paragraph [ref=e237]:
+              - text: We are very pleased with the service that received from Pepagora.com team. we are generating good le...
+              - link "More" [ref=e238] [cursor=pointer]:
+                - /url: ../about/testimonials
+            - paragraph [ref=e239]:
+              - text: S.Ritesh
+              - text: Manager, Shruthi Mechatronics
+          - generic [ref=e240]:
+            - heading "Buying and Selling Made Easy" [level=5] [ref=e241]:
+              - text: Buying and Selling
+              - text: Made Easy
+            - paragraph [ref=e243]: Reduce the marketing costs of your business.
+            - paragraph [ref=e245]: Create your free website, easy to build & requires no code.
+            - paragraph [ref=e247]: Track the demand for your products / services through integrated analytics.
+          - generic [ref=e248]:
+            - heading "Top Clients" [level=5] [ref=e249]
+            - figure [ref=e250]:
+              - img [ref=e251]
+    - generic [ref=e253]:
+      - list [ref=e254]:
+        - listitem [ref=e255]:
+          - link "Advertise with Us" [ref=e256] [cursor=pointer]:
+            - /url: https://staging.pepagora.com/static/upgrade
+        - listitem [ref=e257]:
+          - link "Terms" [ref=e258] [cursor=pointer]:
+            - /url: https://staging.pepagora.com/static/terms
+        - listitem [ref=e259]:
+          - link "Privacy Policy" [ref=e260] [cursor=pointer]:
+            - /url: https://staging.pepagora.com/static/privacy-policy
+        - listitem [ref=e261]:
+          - link "Contact Us" [ref=e262] [cursor=pointer]:
+            - /url: https://staging.pepagora.com/static/contact
+        - listitem [ref=e263]:
+          - link "Feedback / Complaints" [ref=e264] [cursor=pointer]:
+            - /url: https://staging.pepagora.com/help/feedback
+        - listitem [ref=e265]:
+          - link "Help" [ref=e266] [cursor=pointer]:
+            - /url: https://staging.pepagora.com/help
+      - paragraph [ref=e267]: Copyright © 2026 Pepagora.com All rights reserved
+  - text: "@   "
+  - generic [ref=e269] [cursor=pointer]: Feedback
+  - list [ref=e274]:
+    - listitem [ref=e275]:
+      - generic [ref=e276]: Name
+      - text: "*"
+      - textbox "Enter Name" [ref=e277]
+    - listitem [ref=e278]:
+      - generic [ref=e279]: Mobile
+      - textbox "Enter Mobile Number" [ref=e280]
+    - listitem [ref=e281]:
+      - generic [ref=e282]: Email
+      - text: "*"
+      - textbox "Enter Email Id" [ref=e283]
+    - listitem [ref=e284]:
+      - generic [ref=e285]: Comments
+      - text: "*"
+      - textbox [ref=e286]
+    - listitem:
+      - button "Submit" [ref=e287] [cursor=pointer]
